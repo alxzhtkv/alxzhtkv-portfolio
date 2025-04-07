@@ -16,6 +16,7 @@ body,
 
   --background: #0E1012;
   --default: FEF7EC;
+  --default-gray: #BFBFBF;
 }
 
 @theme {
@@ -23,6 +24,7 @@ body,
   --font-be-vietnam-pro: "Be Vietnam Pro", sans-serif;
   --color-background: var(--background);
   --color-default: var(--default);
+  --color-default-gray: var(--default-gray);
 }
 
 .pattern-image {
