@@ -3,16 +3,14 @@ import { hardSkills, softSkills } from "@shared/constants/skills";
 export function Resume() {
   return (
     <div className="wrapper w-full px-11">
-      {/* grid grid-cols-3 gap-11 */}
       <div className="w-full justify-between items-start flex flex-wrap gap-20 relative">
         <Education />
         <Skills />
         <Experience />
         <Other />
-
         <div className="flex flex-1 min-w-[553px] relative">
-          <div className="absolute top-0 left-0" >
-        <span className="text-[120px] uppercase text-default cursor-pointer">alxzhtkv@gmail.com</span>
+          <div className="absolute top-0 left-0">
+            <span className="text-[120px] uppercase text-default cursor-pointer">alxzhtkv@gmail.com</span>
           </div>
         </div>
         <div className="flex flex-1 min-w-[553px]" />

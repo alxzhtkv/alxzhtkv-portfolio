@@ -1,3 +1,4 @@
+import { CV } from "@widgets/cv";
 import { Preview } from "@widgets/preview";
 import { Resume } from "@widgets/resume";
 
@@ -6,6 +7,7 @@ function App() {
     <div className="flex flex-col items-center justify-center">
       <Preview />
       <Resume />
+      <CV/>
       <div className="inset-0 fixed pointer-events-none z-10">
         <div className="pattern-image"/>
       </div>
