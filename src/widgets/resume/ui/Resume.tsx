@@ -2,18 +2,18 @@ import { hardSkills, softSkills } from "@shared/constants/skills";
 
 export function Resume() {
   return (
-    <div className="wrapper w-full px-11">
+    <div className="wrapper w-full px-7 md:px-11 2xl:py-20 pt-20">
       <div className="w-full justify-between items-start flex flex-wrap gap-20 relative">
         <Education />
         <Skills />
         <Experience />
         <Other />
-        <div className="flex flex-1 min-w-[553px] relative">
-          <div className="absolute top-0 left-0">
-            <span className="text-[120px] uppercase text-default cursor-pointer">alxzhtkv@gmail.com</span>
+        <div className="flex flex-1 md:min-w-[553px] relative">
+          <div className=" top-0 left-0 relative 2xl:absolute">
+            <span className="text-[clamp(24px,9vw,120px)] uppercase text-default cursor-pointer leading-[1]">alxzhtkv@gmail.com</span>
           </div>
         </div>
-        <div className="flex flex-1 min-w-[553px]" />
+        <div className="flex flex-1 md:min-w-[553px]" />
       </div>
     </div>
   );
@@ -21,7 +21,7 @@ export function Resume() {
 
 function Education() {
   return (
-    <div className="flex flex-1 min-w-[553px] flex-col gap-5">
+    <div className="flex flex-1 md:min-w-[553px] flex-col gap-5">
       <p className="text-default uppercase underline font-medium text-3xl">Education</p>
       <div className="flex flex-col gap-5 w-full">
         <div className="flex justify-between items-start">
@@ -69,7 +69,7 @@ function Education() {
 
 export function Skills() {
   return (
-    <div className="flex flex-1 min-w-[553px] flex-col gap-7">
+    <div className="flex flex-1 md:min-w-[553px] flex-col gap-7">
       <div className="w-full flex flex-col gap-5">
         <p className="text-default uppercase underline font-medium text-3xl">Hard Skills</p>
         <div className="w-full flex flex-wrap gap-[10px]">
@@ -100,7 +100,7 @@ function Skill({ title }: { title: string }) {
 
 export function Experience() {
   return (
-    <div className="flex flex-1 min-w-[553px] flex-col gap-7">
+    <div className="flex flex-1 md:min-w-[553px] flex-col gap-7">
       <p className="text-default uppercase underline font-medium text-3xl">Work experience</p>
       <div className="flex flex-col gap-2 w-full">
         <div className="flex justify-between items-start">
@@ -136,7 +136,7 @@ export function Experience() {
 
 export function Other() {
   return (
-    <div className="flex flex-1 flex-col gap-7 min-w-[553px]">
+    <div className="flex flex-auto md:flex-1 flex-col gap-7 md:min-w-[553px]">
       <div className="flex flex-col gap-5 w-full">
         <div className="flex flex-col gap-5">
           <p className="text-default uppercase underline font-medium text-3xl">Interest in</p>

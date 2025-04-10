@@ -26,8 +26,8 @@ export function Text() {
   }, []);
 
   return (
-    <div className="min-h-[100vh] flex items-center justify-center">
-      <div className="flex items-start justify-start  gap-x-[17px] flex-wrap max-w-[1600px] pl-11" id="trans_text">
+    <div className="flex items-center justify-center pt-20 pb-40">
+      <div className="flex items-start justify-start  gap-x-[17px] flex-wrap max-w-[1600px] px-11 2xl:px-0" id="trans_text">
         {textArr.map((line) => (
           <>
             {line.line.map((word, index) => {
@@ -35,7 +35,7 @@ export function Text() {
               return (
                 <div
                   key={`word_${index}`}
-                  className="text-default text-be-vietnam-pro text-8xl uppercase transition-all ga"
+                  className="text-default text-be-vietnam-pro text-[clamp(24px,6vw,64px)] leading-[105%] min-[1025px]:text-[clamp(24px,5.6vw,96px)] md:leading-[1] 2xl:leading-[1.15] uppercase transition-all ga"
                   style={{
                     opacity: scrollPercentage - word.position >= line.scrollposition ? 0.5 + opacityIncrement : 0.3
                   }}
