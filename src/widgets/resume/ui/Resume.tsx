@@ -9,7 +9,7 @@ export function Resume() {
         <Experience />
         <Other />
         <div className="flex flex-1 md:min-w-[553px] relative">
-          <div className=" top-0 left-0 relative 2xl:absolute">
+          <div className=" top-0 left-0 relative ">
             <span className="text-[clamp(24px,9vw,120px)] uppercase text-default cursor-pointer leading-[1]">alxzhtkv@gmail.com</span>
           </div>
         </div>

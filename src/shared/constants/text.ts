@@ -154,7 +154,7 @@ export const textArr: TextI[] = [
       },
 
     ],
-    scrollposition: 1.2
+    scrollposition: 1.4
   },
   {
     line: [
@@ -175,6 +175,6 @@ export const textArr: TextI[] = [
         position: 0.42
       }
     ],
-    scrollposition: 1.3
+    scrollposition: 1.5
   }
 ];
