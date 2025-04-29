@@ -2,15 +2,17 @@ import { hardSkills, softSkills } from "@shared/constants/skills";
 
 export function Resume() {
   return (
-    <div className="wrapper w-full px-7 md:px-11 2xl:py-20 pt-20">
-      <div className="w-full justify-between items-start flex flex-wrap gap-20 relative">
+    <div className="wrapper w-full px-10 2xl:pb-20 lg:pt-40 pt-40 sm:px-[70px] ">
+      <div className="w-full justify-between items-start flex flex-col md:flex-row md:flex-wrap  lg:gap-20 gap-[100px] relative">
         <Education />
         <Skills />
         <Experience />
         <Other />
         <div className="flex flex-1 md:min-w-[553px] relative">
           <div className=" top-0 left-0 relative ">
-            <span className="text-[clamp(24px,9vw,120px)] uppercase text-default cursor-pointer leading-[1]">alxzhtkv@gmail.com</span>
+            <a href="mailto:alxzht kv@gmail.com" className="text-[clamp(24px,8.5vw,120px)] uppercase text-default cursor-pointer leading-[1]">
+              alxzhtkv@gmail.com
+            </a>
           </div>
         </div>
         <div className="flex flex-1 md:min-w-[553px]" />
