@@ -2,15 +2,18 @@ import { hardSkills, softSkills } from "@shared/constants/skills";
 
 export function Resume() {
   return (
-    <div className="wrapper w-full px-10 2xl:pb-20 lg:pt-40 pt-40 sm:px-[70px] ">
-      <div className="w-full justify-between items-start flex flex-col md:flex-row md:flex-wrap  lg:gap-20 gap-[100px] relative">
+    <div className="wrapper w-full px-8 2xl:pb-20 lg:pt-40 pt-15 sm:px-[70px] ">
+      <div className="w-full justify-between items-start flex flex-col md:flex-row md:flex-wrap  gap-10  lg:gap-20 sm:gap-[100px] relative">
         <Education />
         <Skills />
         <Experience />
         <Other />
         <div className="flex flex-1 md:min-w-[553px] relative">
           <div className=" top-0 left-0 relative ">
-            <a href="mailto:alxzht kv@gmail.com" className="text-[clamp(24px,8.5vw,120px)] uppercase text-default cursor-pointer leading-[1]">
+            <a
+              href="mailto:alxzht kv@gmail.com"
+              className="text-[clamp(24px,8.5vw,120px)] uppercase text-default cursor-pointer leading-[1]"
+            >
               alxzhtkv@gmail.com
             </a>
           </div>
@@ -24,44 +27,71 @@ export function Resume() {
 function Education() {
   return (
     <div className="flex flex-1 md:min-w-[553px] flex-col gap-5">
-      <p className="text-default uppercase underline font-medium text-3xl">Education</p>
+      <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Education</p>
       <div className="flex flex-col gap-5 w-full">
-        <div className="flex justify-between items-start">
-          <div className="flex flex-col gap-2 flex-1">
-            <p className="text-[22px] leading-[105%] ">
-              Belarusian state of university of Informatics and Radioelectronic
-            </p>
-            <span className="text-default opacity-50 text-lg">
-              Information system and technologies in logistics (Full time)
-            </span>
+        <div className="flex flex-col sm:gap-2 gap-1">
+          <div className="flex justify-between items-start">
+            <div className="flex flex-col gap-2 flex-1">
+              <p className="sm:text-[22px] text-lg leading-[105%] ">
+                Belarusian state of university of Informatics and Radioelectronic
+              </p>
+            </div>
+            <div className="flex flex-col justify-between h-full gap-2  flex-[0.4]">
+              <p className="sm:text-[22px] text-lg leading-[105%]  text-right">Belarus, Minsk</p>
+            </div>
           </div>
-          <div className="flex flex-col justify-between h-full gap-2  flex-[0.4]">
-            <p className="text-[22px] leading-[105%]  text-right">Belarus, Minsk</p>
-            <span className="text-default opacity-50 text-lg text-right">2020 - 2024</span>
-          </div>
-        </div>
-        <div className="flex justify-between items-start">
-          <div className="flex flex-col gap-2 flex-1">
-            <p className="text-[22px] leading-[105%] ">English school «EnglishPapa»</p>
-            <span className="text-default opacity-50 text-lg">Intermediate level (B1)</span>
-          </div>
-          <div className="flex flex-col justify-between h-full gap-2 flex-[0.4]">
-            <p className="text-[22px] leading-[105%]  text-right">Belarus, Minsk</p>
-            <span className="text-default opacity-50 text-lg text-right">Sep 2022 - Feb 2023</span>
+          <div className="flex justify-between items-start">
+            <div className="flex flex-col gap-2 flex-1">
+              <span className="text-default opacity-50 text-sm sm:text-lg">
+                Information system and technologies in logistics (Full time)
+              </span>
+            </div>
+            <div className="flex flex-col justify-between h-full gap-2  flex-[0.4]">
+              <span className="text-default opacity-50 text-sm sm:text-lg text-right">2020 - 2024</span>
+            </div>
           </div>
         </div>
-        <div className="flex justify-between items-start">
-          <div className="flex flex-col gap-2 flex-1">
-            <p className="text-[22px] leading-[105%]">English school «EnglishGroup»</p>
-            <span className="text-default opacity-50 text-lg ">Upper Intermediate level (B2)</span>
+
+        <div className="flex flex-col sm:gap-2 gap-1">
+          <div className="flex justify-between items-start">
+            <div className="flex flex-col gap-2 flex-1">
+              <p className="sm:text-[22px] text-lg leading-[105%] ">English school «EnglishPapa»</p>
+            </div>
+            <div className="flex flex-col justify-between h-full gap-2  flex-[0.4]">
+              <p className="sm:text-[22px] text-lg leading-[105%]  text-right">Belarus, Minsk</p>
+            </div>
           </div>
-          <div className="flex flex-col justify-between  gap-2 h-full flex-[0.4]">
-            <p className="text-[22px] leading-[105%]  text-right">Belarus, Minsk</p>
-            <span className="text-default opacity-50 text-lg text-right">
-              Jan 2025 - now
-              <br />
-              Feb 2023 - Jul 2023
-            </span>
+          <div className="flex justify-between items-start">
+            <div className="flex flex-col gap-2 flex-1">
+              <span className="text-default opacity-50 text-sm sm:text-lg">Intermediate level (B1)</span>
+            </div>
+            <div className="flex flex-col justify-between h-full gap-2  flex-[0.4]">
+              <span className="text-default opacity-50 text-sm sm:text-lg text-right">Sep 2022 - Feb 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col sm:gap-2 gap-1">
+          <div className="flex justify-between items-start">
+            <div className="flex flex-col gap-2 flex-1">
+              <p className="sm:text-[22px] text-lg leading-[105%] ">English school «EnglishPapa»</p>
+            </div>
+            <div className="flex flex-col justify-between h-full gap-2  flex-[0.5]">
+              <p className="sm:text-[22px] text-lg leading-[105%]  text-right">Belarus, Minsk</p>
+            </div>
+          </div>
+          <div className="flex justify-between items-start">
+            <div className="flex flex-col gap-2 flex-1">
+              <span className="text-default opacity-50 text-sm sm:text-lg">Intermediate level (B2)</span>
+            </div>
+            <div className="flex flex-col justify-between h-full gap-2  flex-[0.5]">
+              <span className="text-default opacity-50 text-sm sm:text-lg text-right">
+                {" "}
+                Jan 2025 - now
+                <br />
+                Feb 2023 - Jul 2023
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -73,7 +103,7 @@ export function Skills() {
   return (
     <div className="flex flex-1 md:min-w-[553px] flex-col gap-7">
       <div className="w-full flex flex-col gap-5">
-        <p className="text-default uppercase underline font-medium text-3xl">Hard Skills</p>
+        <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Hard Skills</p>
         <div className="w-full flex flex-wrap gap-[10px]">
           {hardSkills.map((skill) => (
             <Skill title={skill} />
@@ -81,7 +111,7 @@ export function Skills() {
         </div>
       </div>
       <div className="w-full flex flex-col gap-7">
-        <p className="text-default uppercase underline font-medium text-3xl">Soft Skills</p>
+        <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Soft Skills</p>
         <div className="w-full flex flex-wrap gap-[10px]">
           {softSkills.map((skill) => (
             <Skill title={skill} />
@@ -103,7 +133,7 @@ function Skill({ title }: { title: string }) {
 export function Experience() {
   return (
     <div className="flex flex-1 md:min-w-[553px] flex-col gap-7">
-      <p className="text-default uppercase underline font-medium text-3xl">Work experience</p>
+      <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Work experience</p>
       <div className="flex flex-col gap-2 w-full">
         <div className="flex justify-between items-start">
           <div className="flex flex-col gap-2 flex-1">
@@ -141,14 +171,14 @@ export function Other() {
     <div className="flex flex-auto md:flex-1 flex-col gap-7 md:min-w-[553px]">
       <div className="flex flex-col gap-5 w-full">
         <div className="flex flex-col gap-5">
-          <p className="text-default uppercase underline font-medium text-3xl">Interest in</p>
+          <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Interest in</p>
           <p className="w-full text-xl text-default ">
             Programming, UI/UX, Digital Products, Design Systems, Design, Art, Reading, Gym &amp;&nbsp;Running
           </p>
         </div>
       </div>
       <div className="flex flex-col gap-5 w-full">
-        <p className="text-default uppercase underline font-medium text-3xl">Languages</p>
+        <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Languages</p>
 
         <div className="flex flex-col gap-2">
           <div className="flex justify-between items-start">

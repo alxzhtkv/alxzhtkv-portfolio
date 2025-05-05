@@ -3,6 +3,7 @@
 html,
 body,
 #root {
+  background-color: #0E1012;
   /* height: 100%; */
   width: 100%;
 }
