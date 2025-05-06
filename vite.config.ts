@@ -15,6 +15,7 @@ export default defineConfig({
       '@lib': resolvePath('./src/lib'),
       '@app': resolvePath('./src/app'),
       '@widgets': resolvePath('./src/widgets'),
+      '@features': resolvePath('./src/features'),
     },
   },
 })

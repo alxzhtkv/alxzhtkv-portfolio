@@ -2,8 +2,8 @@ import { hardSkills, softSkills } from "@shared/constants/skills";
 
 export function Resume() {
   return (
-    <div className="wrapper w-full px-8 2xl:pb-20 lg:pt-40 pt-15 sm:px-[70px] ">
-      <div className="w-full justify-between items-start flex flex-col md:flex-row md:flex-wrap  gap-10  lg:gap-20 sm:gap-[100px] relative">
+    <div className="wrapper w-full px-6 2xl:pb-20 lg:pt-40 pt-15 sm:px-[70px] ">
+      <div className="w-full justify-between items-start flex flex-col md:flex-row md:flex-wrap  gap-12  lg:gap-20 sm:gap-[100px] relative">
         <Education />
         <Skills />
         <Experience />
@@ -26,9 +26,9 @@ export function Resume() {
 
 function Education() {
   return (
-    <div className="flex flex-1 md:min-w-[553px] flex-col gap-5">
+    <div className="flex flex-1 md:min-w-[553px] flex-col sm:gap-5 gap-3">
       <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Education</p>
-      <div className="flex flex-col gap-5 w-full">
+      <div className="flex flex-col sm:gap-5 gap-3 w-full">
         <div className="flex flex-col sm:gap-2 gap-1">
           <div className="flex justify-between items-start">
             <div className="flex flex-col gap-2 flex-1">
@@ -101,8 +101,8 @@ function Education() {
 
 export function Skills() {
   return (
-    <div className="flex flex-1 md:min-w-[553px] flex-col gap-7">
-      <div className="w-full flex flex-col gap-5">
+    <div className="flex flex-1 md:min-w-[553px] flex-col gap-10">
+      <div className="w-full flex flex-col sm:gap-5 gap-3">
         <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Hard Skills</p>
         <div className="w-full flex flex-wrap gap-[10px]">
           {hardSkills.map((skill) => (
@@ -110,7 +110,7 @@ export function Skills() {
           ))}
         </div>
       </div>
-      <div className="w-full flex flex-col gap-7">
+      <div className="w-full flex flex-col sm:gap-5 gap-3">
         <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Soft Skills</p>
         <div className="w-full flex flex-wrap gap-[10px]">
           {softSkills.map((skill) => (
@@ -132,7 +132,7 @@ function Skill({ title }: { title: string }) {
 
 export function Experience() {
   return (
-    <div className="flex flex-1 md:min-w-[553px] flex-col gap-7">
+    <div className="flex flex-1 md:min-w-[553px] flex-col sm:gap-5 gap-3">
       <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Work experience</p>
       <div className="flex flex-col gap-2 w-full">
         <div className="flex justify-between items-start">
@@ -169,15 +169,15 @@ export function Experience() {
 export function Other() {
   return (
     <div className="flex flex-auto md:flex-1 flex-col gap-7 md:min-w-[553px]">
-      <div className="flex flex-col gap-5 w-full">
-        <div className="flex flex-col gap-5">
+      <div className="flex flex-col sm:gap-5 gap-3 w-full">
+        <div className="flex flex-col sm:gap-5 gap-3">
           <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Interest in</p>
           <p className="w-full text-xl text-default ">
             Programming, UI/UX, Digital Products, Design Systems, Design, Art, Reading, Gym &amp;&nbsp;Running
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-5 w-full">
+      <div className="flex flex-col sm:gap-5 gap-3 w-full">
         <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Languages</p>
 
         <div className="flex flex-col gap-2">

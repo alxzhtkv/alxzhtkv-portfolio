@@ -35,6 +35,9 @@
       "@widgets/*": [
         "widgets/*"
       ],
+      "@features/*": [
+        "features/*"
+      ]
     },
   },
   "include": ["src"]

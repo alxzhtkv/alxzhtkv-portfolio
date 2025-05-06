@@ -3,9 +3,13 @@
 html,
 body,
 #root {
-  background-color: #0E1012;
-  /* height: 100%; */
+  background-color: #0e1012;
   width: 100%;
+  user-select: text;
+}
+
+::selection {
+  background: #8888881f;
 }
 
 :root {
@@ -13,11 +17,12 @@ body,
   font-weight: 400;
   font-family: "Afacad", sans-serif;
   color-scheme: light dark;
-  background-color: #0E1012;
+  background-color: #0e1012;
+  color: #ffffff;
 
-  --background: #0E1012;
+  --background: #0e1012;
   --default: FEF7EC;
-  --default-gray: #BFBFBF;
+  --default-gray: #bfbfbf;
 }
 
 @theme {
@@ -51,5 +56,3 @@ body,
   max-width: 1600px;
   margin: 0 auto;
 }
-
-

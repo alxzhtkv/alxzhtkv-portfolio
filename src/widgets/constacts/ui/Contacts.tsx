@@ -1,3 +1,5 @@
+import { WebpImage } from "@shared/ui/webp-image";
+
 export function Contacts() {
   const links = [
     {
@@ -24,12 +26,12 @@ export function Contacts() {
   return (
     <div className="w-full flex flex-col items-end justify-start">
       <div className="w-full h-[82vh] sm:h-[100vh] relative flex items-end justify-start">
-        <img
+        <WebpImage
           src={"/images/background.png"}
           alt="contacts"
           className="w-full h-full object-cover  absolute top-0 left-0 max-[1025px]:hidden "
         />
-        <img
+        <WebpImage
           src={"/images/background_tablet.png"}
           alt="contacts"
           className="w-full h-full object-cover absolute top-0 left-0 min-[1025px]:hidden "
@@ -54,7 +56,7 @@ export function Contacts() {
             </div>
           </div>
 
-          <footer className="py-5 px-10 w-full flex items-center justify-end gap-[50px] max-[1024px]:hidden">
+          <footer className="py-5 px-10 w-full flex items-center justify-end gap-10 max-[1024px]:hidden">
             {links.map((link) => (
               <a
                 href={link.href}
