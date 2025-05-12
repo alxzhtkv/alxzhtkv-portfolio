@@ -17,27 +17,26 @@ export const textArr: TextI[] = [
       },
       {
         word: "have",
-        position: 0.06
+        position: 0.02
       },
       {
         word: "a",
-        position: 0.12
+        position: 0.03
       },
       {
         word: "strong",
-        position: 0.18
+        position: 0.04
       },
       {
         word: "focus",
-        position: 0.24
+        position: 0.05
       },
       {
         word: "on",
-        position: 0.3
-      },
- 
-    ], 
-    scrollposition: 0.2
+        position: 0.06
+      }
+    ],
+    scrollposition: 0
   },
   {
     line: [
@@ -54,7 +53,7 @@ export const textArr: TextI[] = [
         position: 0.12
       }
     ],
-    scrollposition: 0.5
+    scrollposition: 0.2
   },
   {
     line: [
@@ -73,10 +72,9 @@ export const textArr: TextI[] = [
       {
         word: "web",
         position: 0.18
-      },
-    
+      }
     ],
-    scrollposition: 0.7
+    scrollposition: 0.4
   },
   {
     line: [
@@ -99,11 +97,9 @@ export const textArr: TextI[] = [
       {
         word: "driven",
         position: 0.24
-      },
-      
-        
+      }
     ],
-    scrollposition: 0.9
+    scrollposition: 0.6
   },
   {
     line: [
@@ -132,7 +128,7 @@ export const textArr: TextI[] = [
         position: 0.36
       }
     ],
-    scrollposition: 1.1
+    scrollposition: 0.8
   },
   {
     line: [
@@ -151,10 +147,9 @@ export const textArr: TextI[] = [
       {
         word: "and",
         position: 0.3
-      },
-
+      }
     ],
-    scrollposition: 1.4
+    scrollposition: 1.1
   },
   {
     line: [
@@ -175,6 +170,6 @@ export const textArr: TextI[] = [
         position: 0.42
       }
     ],
-    scrollposition: 1.5
+    scrollposition: 1.2
   }
 ];

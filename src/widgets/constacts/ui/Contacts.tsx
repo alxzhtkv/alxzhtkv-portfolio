@@ -36,7 +36,7 @@ export function Contacts() {
           alt="contacts"
           className="w-full h-full object-cover absolute top-0 left-0 min-[1025px]:hidden "
         />
-        <div className="z-10 w-full flex flex-col justify-start ">
+        <div className="z-10 w-full flex flex-col justify-start max-w-[1920px] mx-auto">
           <div className="relative w-full sm:w-fit">
             <h3 className="w-full sm:w-fit text-default text-[clamp(76px,14vw,220px)] leading-[clamp(70px,10vw,187px)] md:pl-11 pl-5 md:pb-11 pb-10 uppercase font-normal cursor-pointer">
               <a href="https://t.me/alxzhtkv" target="_blank">
@@ -44,11 +44,11 @@ export function Contacts() {
               </a>
             </h3>
 
-            <div className="flex sm:flex-row flex-col-reverse sm:gap-8 gap-0 items-start justify-start absolute bottom-[70%] sm:bottom-1/2 sm:right-10 translate-x-[100%]  right-[40%]">
+            <div className="flex sm:flex-row flex-col-reverse sm:gap-8 gap-0 items-start justify-start absolute bottom-[70%] sm:bottom-[56%] 2xl:bottom-1/2 sm:right-10 translate-x-[100%]  right-[40%]">
               <img
                 src={"/icons/arrow.svg"}
                 alt="arrow"
-                className="  sm:max-w-[50px] max-w-[38px] -scale-x-[1] sm:scale-x-100 sm:rotate-[109deg]  "
+                className="sm:max-w-[50px] max-w-[38px] -scale-x-[1] sm:scale-x-100 sm:rotate-[109deg]  "
               />
               <p className="text-white text-[clamp(18px,1.5vw,24px)] leading-[1.2] text-right uppercase -translate-y-1/2">
                 click here

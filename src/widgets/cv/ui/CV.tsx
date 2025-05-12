@@ -1,4 +1,5 @@
 import { WebpImage } from "@shared/ui/webp-image";
+import { motion } from "motion/react";
 
 export function CV() {
   return (
@@ -8,9 +9,20 @@ export function CV() {
           See my <br className="sm:block hidden" /> full CV;)
         </h3>
         <div className="flex sm:flex-row flex-col-reverse relative sm:items-center items-start justify-center max-[1025px]:flex-[3]">
-          <a href="/AlexandraZhitkovaCV.pdf" target="_blank">
-            <WebpImage src="/images/cv_stack.png" alt="cv" className="2xl:max-h-[80vh] md:max-h-[80vh] cursor-pointer sm:translate-x-0 translate-x-[1%]" />
-          </a>
+          <motion.a
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0, duration: 0.8 }}
+            href="/AlexandraZhitkovaCV.pdf"
+            target="_blank"
+          >
+            <WebpImage
+              src="/images/cv_stack.png"
+              alt="cv"
+              className="2xl:max-h-[80vh] md:max-h-[80vh] cursor-pointer sm:translate-x-0 translate-x-[1%]"
+            />
+          </motion.a>
 
           <img
             src="/icons/arrow.svg"

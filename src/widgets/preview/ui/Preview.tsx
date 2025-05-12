@@ -1,16 +1,27 @@
 import { WebpImage } from "@shared/ui/webp-image";
+import { motion } from "framer-motion";
 
 export function Preview() {
   return (
     <div className="wrapper overflow-hidden sm:overflow-visible w-full min-h-screen sm:min-h-[75vh] lg:min-h-screen h-auto flex flex-col items-center justify-center relative">
-      <div className="absolute top-0 -left-7">
-        <WebpImage  
+      <motion.div
+        className="absolute top-0 -left-7"
+        initial={{ opacity: 0, x: -200, y: -100, scale: 0.5 }}
+        animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+      >
+        <WebpImage
           src={"/images/black_white.png"}
           alt="reading"
           className="sm:block hidden lg:w-[27vw] w-[40vw]  lg:max-w-[450px]"
         />
-      </div>
-      <div className="absolute top-4 sm:right-0 right-[-0%] flex-row sm:flex-col-reverse lg:flex-row flex  items-center justify-center">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 200, y: -100, scale: 0.5 }}
+        animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+        className="absolute top-4 sm:right-0 right-[-0%] flex-row sm:flex-col-reverse lg:flex-row flex  items-center justify-center"
+      >
         <div className="flex flex-col sm:flex-col-reverse lg:flex-col items-start sm:-translate-y-5 translate-x-5 lg:translate-y-0">
           <p className="text-white text-base sm:text-[clamp(18px,1.5vw,24px)] leading-[1.2] sm:text-right uppercase sm:translate-x-[-30%] translate-x-[-15%] ">
             my digital arts
@@ -24,13 +35,18 @@ export function Preview() {
           </div>
         </div>
 
-        <WebpImage 
+        <WebpImage
           src={"/images/arts1.png"}
           alt="arts"
           className="lg:w-[32vw] sm:w-[44vw] w-[65vw] -rotate-[-7deg] sm:rotate-[0eg] lg:max-w-[500px]"
         />
-      </div>
-      <div className="absolute bottom-0 left-6 flex items-center ">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -200, y: 100, scale: 0.5 }}
+        animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+        className="absolute bottom-0 left-6 flex items-center "
+      >
         <WebpImage
           src={"/images/me.png"}
           alt="me"
@@ -48,12 +64,19 @@ export function Preview() {
             />
           </div>
         </div>
-      </div>
-      <WebpImage
-        src={"/images/right-bottom.png"}
-        alt="reading"
-        className="sm:block hidden lg:w-[30vw] w-[45vw]  lg:max-w-[500px] absolute -bottom-10 right-0"
-      />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 200, y: 100, scale: 0.5 }}
+        animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+        className="absolute -bottom-10 right-0"
+      >
+        <WebpImage
+          src={"/images/right-bottom.png"}
+          alt="reading"
+          className="sm:block hidden lg:w-[30vw] w-[45vw]  lg:max-w-[500px] "
+        />
+      </motion.div>
       <div className="sm:px-0 px-6 flex flex-col items-start gap-0">
         <h3 className="uppercase text-default text-[clamp(20px,4vw,56px)] sm:pb-0 pb-2 leading-[1] font-medium">
           Front-end developer

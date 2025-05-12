@@ -1,23 +1,33 @@
 import { hardSkills, softSkills } from "@shared/constants/skills";
+import { motion } from "motion/react";
 
 export function Resume() {
   return (
-    <div className="wrapper w-full px-6 2xl:pb-20 lg:pt-40 pt-15 sm:px-[70px] ">
-      <div className="w-full justify-between items-start flex flex-col md:flex-row md:flex-wrap  gap-12  lg:gap-20 sm:gap-[100px] relative">
+    <div className="wrapper w-full px-6 2xl:pb-20 lg:pt-40 pt-20 sm:px-[70px] ">
+      <div className="w-full justify-between items-start flex flex-col md:flex-row md:flex-wrap  gap-16  lg:gap-20 sm:gap-[100px] relative">
         <Education />
         <Skills />
         <Experience />
         <Other />
-        <div className="flex flex-1 md:min-w-[553px] relative">
-          <div className=" top-0 left-0 relative ">
+        <motion.div
+          initial={{ opacity: 0, x: "-30%" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-200px" }}
+          transition={{ delay: 0, duration: 0.8 }}
+          className="flex flex-1"
+        >
+          <div className="top-0 left-0 relative ">
             <a
               href="mailto:alxzht kv@gmail.com"
-              className="text-[clamp(24px,8.5vw,120px)] uppercase text-default cursor-pointer leading-[1]"
+              className="inline-flex items-center  text-[clamp(24px,8.5vw,120px)] uppercase text-default cursor-pointer leading-[1]"
             >
-              alxzhtkv@gmail.com
+              alxzhtkv@gmail.com{" "}
+              <span className="text-default text-[clamp(10px,3.5vw,50px)] absolute top-0 right-0 translate-x-full">
+                ↗
+              </span>
             </a>
           </div>
-        </div>
+        </motion.div>
         <div className="flex flex-1 md:min-w-[553px]" />
       </div>
     </div>
@@ -26,7 +36,13 @@ export function Resume() {
 
 function Education() {
   return (
-    <div className="flex flex-1 md:min-w-[553px] flex-col sm:gap-5 gap-3">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0, duration: 0.5 }}
+      className="flex flex-1 md:min-w-[553px] flex-col sm:gap-5 gap-3"
+    >
       <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Education</p>
       <div className="flex flex-col sm:gap-5 gap-3 w-full">
         <div className="flex flex-col sm:gap-2 gap-1">
@@ -95,13 +111,19 @@ function Education() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
 export function Skills() {
   return (
-    <div className="flex flex-1 md:min-w-[553px] flex-col gap-10">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0, duration: 0.5 }}
+      className="flex flex-1 md:min-w-[553px] flex-col sm:gap-10 gap-16"
+    >
       <div className="w-full flex flex-col sm:gap-5 gap-3">
         <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Hard Skills</p>
         <div className="w-full flex flex-wrap gap-[10px]">
@@ -118,7 +140,7 @@ export function Skills() {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -132,14 +154,20 @@ function Skill({ title }: { title: string }) {
 
 export function Experience() {
   return (
-    <div className="flex flex-1 md:min-w-[553px] flex-col sm:gap-5 gap-3">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0, duration: 0.5 }}
+      className="flex flex-1 md:min-w-[553px] flex-col sm:gap-5 gap-3"
+    >
       <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Work experience</p>
       <div className="flex flex-col gap-2 w-full">
         <div className="flex justify-between items-start">
           <div className="flex flex-col gap-2 flex-1">
             <p className="text-[22px] leading-[105%]">Frontend developer</p>
           </div>
-          <div className="flex flex-col justify-between h-full gap-2 flex-[0.4]">
+          <div className="flex flex-col justify-between h-full gap-2 1">
             <p className="text-[22px] leading-[105%]  text-right">Belarus, Minsk</p>
             <span className="text-default opacity-50 text-lg text-right">Aug 2023 - now</span>
           </div>
@@ -162,13 +190,19 @@ export function Experience() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
 export function Other() {
   return (
-    <div className="flex flex-auto md:flex-1 flex-col gap-7 md:min-w-[553px]">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0, duration: 0.5 }}
+      className="flex flex-auto md:flex-1 flex-col sm:gap-7 gap-16 md:min-w-[553px]"
+    >
       <div className="flex flex-col sm:gap-5 gap-3 w-full">
         <div className="flex flex-col sm:gap-5 gap-3">
           <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Interest in</p>
@@ -195,6 +229,6 @@ export function Other() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
