@@ -14,12 +14,12 @@ export function Resume() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-200px" }}
           transition={{ delay: 0, duration: 0.8 }}
-          className="flex flex-1"
+          className="hidden flex-1 lg:flex"
         >
           <div className="top-0 left-0 relative ">
             <a
-              href="mailto:alxzht kv@gmail.com"
-              className="inline-flex items-center  text-[clamp(24px,8.5vw,120px)] uppercase text-default cursor-pointer leading-[1]"
+              href="mailto:alxzhtkv@gmail.com"
+              className="inline-flex items-center text-[clamp(24px,8.5vw,120px)] uppercase text-default cursor-pointer leading-[1]"
             >
               alxzhtkv@gmail.com{" "}
               <span className="text-default text-[clamp(10px,3.5vw,50px)] absolute top-0 right-0 translate-x-full">
@@ -28,6 +28,19 @@ export function Resume() {
             </a>
           </div>
         </motion.div>
+        <div className="flex flex-1 lg:hidden">
+          <div className="top-0 left-0 relative ">
+            <a
+              href="mailto:alxzhtkv@gmail.com"
+              className="inline-flex items-center text-[clamp(24px,8.5vw,120px)] uppercase text-default cursor-pointer leading-[1]"
+            >
+              alxzhtkv@gmail.com{" "}
+              <span className="text-default text-[clamp(10px,3.5vw,50px)] absolute top-0 right-0 translate-x-full">
+                ↗
+              </span>
+            </a>
+          </div>
+        </div>
         <div className="flex flex-1 md:min-w-[553px]" />
       </div>
     </div>
