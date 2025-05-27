@@ -14,8 +14,9 @@ export function CV() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0, duration: 0.8 }}
-                   // href="/AlexandraZhitkovaCV.pdf"
-            href="https://app.enhancv.com/share/99e17835/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+            // href="/CV.pdf"
+            // href="https://app.enhancv.com/share/99e17835/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+            href="https://drive.google.com/file/d/1fC0jMPeHeCzTDYgDcngnroSWdDrACESK/view?usp=sharing"
             target="_blank"
           >
             <WebpImage
