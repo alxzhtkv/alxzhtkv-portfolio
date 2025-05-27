@@ -16,7 +16,7 @@ export function CV() {
             transition={{ delay: 0, duration: 0.8 }}
             // href="/CV.pdf"
             // href="https://app.enhancv.com/share/99e17835/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
-            href="https://drive.google.com/file/d/1fC0jMPeHeCzTDYgDcngnroSWdDrACESK/view?usp=sharing"
+            href="https://github.com/alxzhtkv/alxzhtkv-portfolio/blob/main/public/CV.pdf"
             target="_blank"
           >
             <WebpImage
