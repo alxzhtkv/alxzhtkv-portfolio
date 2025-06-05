@@ -186,20 +186,33 @@ export function Experience() {
           </div>
         </div>
         <div className="flex flex-col gap-[10px]">
-          <p className="text-default opacity-70 text-lg text-justify leading-[125%]">
+          <p className="text-default/70 text-lg text-justify leading-[125%]">
             Currently working in a team to build the complete frontend infrastructure for a web-based game account
             platform. This includes designing and developing web interfaces and pages that support user account
-            management, game data visualization, and interactive features for players.
+            management, game data visualization, and interactive features for players.<br/>
+            <span className="text-white">
+              Tech stack: React, TypeScript, TanStack Query, Zustand, Tailwind CSS, Vite, FSD
+            </span>
           </p>
-          <p className="text-default opacity-70 text-lg text-justify leading-[125%]">
+          <p className="text-default/70 text-lg text-justify leading-[125%]">
             Built a landing page for a platform aimed at architects and interior designers. The platform allows users to
-            upload drawings, attach files, and describe objects on sketches. Also worked on the user onboarding
-            tutorial, UI hints, and other logic components of the platform.
+            upload drawings, attach files, and describe objects in sketches. Also worked on the user onboarding
+            tutorial, UI hints, and other logic components of the platform.<br/>
+            <span className="text-white">Tech stack: React, TypeScript, Effector, SCSS, Webpack</span>
           </p>
-          <p className="text-default opacity-70 text-lg text-justify leading-[125%]">
+          <p className="text-default/70 text-lg text-justify leading-[125%]">
             Developed a React Native application with features for selecting workouts, viewing instructions, and
             tracking workout stats, and worked on another React Native app that transforms users' voices with various
-            effects.
+            effects.<br/>
+            <span className="text-white">
+              Tech stack: React Native, TypeScript, Redux, Redux Toolkit, Styled-components
+            </span>
+          </p>
+          <p className="text-default/70 text-lg text-justify leading-[125%]">
+            This website is my personal portfolio. I designed and developed it from scratch {`;)`}<br/>
+            <span className="text-white">
+              Tech stack: React, Tailwind CSS, Vite, Framer Motion.
+            </span>
           </p>
         </div>
       </div>
