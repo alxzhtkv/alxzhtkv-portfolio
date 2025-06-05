@@ -1,13 +1,16 @@
+import { useImagesLoaded } from "@hooks/useImagesLoaded";
 import { WebpImage } from "@shared/ui/webp-image";
 import { motion } from "framer-motion";
 
 export function Preview() {
+  const { isReady } = useImagesLoaded();
+
   return (
     <div className="wrapper overflow-hidden sm:overflow-visible w-full min-h-screen sm:min-h-[75vh] lg:min-h-screen h-auto flex flex-col items-center justify-center relative">
       <motion.div
         className="absolute top-0 -left-7"
         initial={{ opacity: 0, x: -200, y: -100, scale: 0.5 }}
-        animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+        animate={isReady ? { opacity: 1, x: 0, y: 0, scale: 1 } : { opacity: 0, x: -200, y: -100, scale: 0.5 }}
         transition={{ delay: 0.5, duration: 0.8 }}
       >
         <WebpImage
@@ -18,7 +21,7 @@ export function Preview() {
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: 200, y: -100, scale: 0.5 }}
-        animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+        animate={isReady ? { opacity: 1, x: 0, y: 0, scale: 1 } : { opacity: 0, x: 200, y: -100, scale: 0.5 }}
         transition={{ delay: 0.5, duration: 0.8 }}
         className="absolute top-4 sm:right-0 right-[-0%] flex-row sm:flex-col-reverse lg:flex-row flex  items-center justify-center"
       >
@@ -43,7 +46,7 @@ export function Preview() {
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: -200, y: 100, scale: 0.5 }}
-        animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+        animate={isReady ? { opacity: 1, x: 0, y: 0, scale: 1 } : { opacity: 0, x: -200, y: 100, scale: 0.5 }}
         transition={{ delay: 0.5, duration: 0.8 }}
         className="absolute bottom-0 left-6 flex items-center "
       >
@@ -67,7 +70,7 @@ export function Preview() {
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: 200, y: 100, scale: 0.5 }}
-        animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+        animate={isReady ? { opacity: 1, x: 0, y: 0, scale: 1 } : { opacity: 0, x: 200, y: 100, scale: 0.5 }}
         transition={{ delay: 0.5, duration: 0.8 }}
         className="absolute -bottom-10 right-0"
       >
@@ -77,7 +80,12 @@ export function Preview() {
           className="sm:block hidden lg:w-[30vw] w-[45vw]  lg:max-w-[500px] "
         />
       </motion.div>
-      <div className="sm:px-0 px-6 flex flex-col items-start gap-0">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={isReady ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+        className="sm:px-0 px-6 flex flex-col items-start gap-0"
+      >
         <h3 className="uppercase text-default text-[clamp(20px,4vw,56px)] sm:pb-0 pb-2 leading-[1] font-medium">
           Front-end developer
         </h3>
@@ -99,7 +107,7 @@ export function Preview() {
             <p>TailwindCSS</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

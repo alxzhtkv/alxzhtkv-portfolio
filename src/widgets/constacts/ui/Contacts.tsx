@@ -59,6 +59,7 @@ export function Contacts() {
           <footer className="py-5 px-10 w-full flex items-center justify-end gap-10 max-[1024px]:hidden">
             {links.map((link) => (
               <a
+                key={link.href}
                 href={link.href}
                 target="_blank"
                 className="flex items-center justify-center h-11 px-6 border border-default rounded-[19px] cursor-pointer hover:bg-white/10 transition-all"
@@ -72,6 +73,7 @@ export function Contacts() {
       <footer className="py-7 px-5 w-full items-center justify-between flex-wrap gap-4  max-[1024px]:flex hidden text-xl">
         {links.map((link) => (
           <a
+            key={link.href}
             href={link.href}
             target="_blank"
             className="flex items-center justify-center flex-auto h-11 px-2 border border-default rounded-[19px] cursor-pointer"

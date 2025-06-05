@@ -50,11 +50,7 @@ export function Text() {
           </>
         ))}
         <div className="flex flex-col items-center justify-center sm:absolute  lg:-bottom-[5%] -bottom-[19%]  lg:right-[15%] sm:right-[10%] w-full sm:w-fit sm:pt-0 pt-4 pl-[25%]">
-          <img
-            src={"/icons/arrow.svg"}
-            alt="arrow"
-            className=" sm:max-w-[50px] max-w-[38px] rotate-[180deg]  "
-          />
+          <img src={"/icons/arrow.svg"} alt="arrow" className=" sm:max-w-[50px] max-w-[38px] rotate-[180deg]  " />
           <p className="text-white text-[clamp(18px,1.5vw,24px)] leading-[1.2] text-right uppercase mt-3 sm:translate-x-1/3">
             about me
           </p>

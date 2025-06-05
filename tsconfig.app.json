@@ -37,6 +37,9 @@
       ],
       "@features/*": [
         "features/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
       ]
     },
   },

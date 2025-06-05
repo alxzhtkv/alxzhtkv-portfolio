@@ -141,7 +141,7 @@ export function Skills() {
         <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Hard Skills</p>
         <div className="w-full flex flex-wrap gap-[10px]">
           {hardSkills.map((skill) => (
-            <Skill title={skill} />
+            <Skill title={skill} key={skill} />
           ))}
         </div>
       </div>
@@ -149,7 +149,7 @@ export function Skills() {
         <p className="text-default uppercase underline font-medium text-2xl sm:text-3xl">Soft Skills</p>
         <div className="w-full flex flex-wrap gap-[10px]">
           {softSkills.map((skill) => (
-            <Skill title={skill} />
+            <Skill title={skill} key={skill} />
           ))}
         </div>
       </div>
