@@ -7,7 +7,7 @@ export const hardSkills = [
   "MobX",
   "Redux/Redux-Toolkit",
   "Effector",
-  "RTK-Query",
+  "TanStack Query",
   "CSS",
   "SASS",
   "TailwindCSS",
